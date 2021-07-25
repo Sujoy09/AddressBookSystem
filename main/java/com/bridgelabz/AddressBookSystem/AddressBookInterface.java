@@ -81,7 +81,7 @@ public class AddressBookInterface {
 	}
 
 	public void showBookFiles() {
-		File directory = new File("C:\\Users\\iamat\\eclipse-workspace\\java-address-book-file-IO\\resources");
+		File directory = new File("C:\\Users\\roysu\\eclipse-workspace\\AddressBookSystem\\src\\main\\resources");
 		if (directory.exists()) {
 			File filesList[] = directory.listFiles();
 			System.out.println("List of files in the specified directory (./resources):");
@@ -95,7 +95,7 @@ public class AddressBookInterface {
 	}
 
 	public void getBookTxtFile(String bookName) throws FileNotFoundException {
-		File directory = new File("C:\\Users\\iamat\\eclipse-workspace\\java-address-book-file-IO\\resources");
+		File directory = new File("C:\\Users\\roysu\\eclipse-workspace\\AddressBookSystem\\src\\main\\resources");
 		String fileName = bookName;
 		File myTxtFile = new File(directory, fileName + ".txt");
 		if (myTxtFile.exists()) {

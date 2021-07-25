@@ -34,12 +34,10 @@ public class AddressBookMain extends AddressBookInterface {
 				String bookName = scanner.nextLine();
 				createBookTxtFile(bookName);
 				break;
-
 			case 2:
 				System.out.println("Displaying all Address Book(s) files in the specified directory..");
 				showBookFiles();
 				break;
-
 			case 3:
 				System.out.println("Editing records in the Address Book...");
 				System.out.println("Displaying all Address Books");
@@ -85,21 +83,17 @@ public class AddressBookMain extends AddressBookInterface {
 						String var8 = scanner.nextLine();
 						addPersonToTxtFile(var1, var2, var3, var4, var5, var6, var7, var8, addressBookName);
 						break;
-
 					case 2:
 						getBookTxtFile(addressBookName);
 						break;
-
 					case 0:
 						innerflag = 1;
 						break;
-
 					default:
 						System.out.println("Invalid choice.");
 					}
 				}
 				break;
-
 			case 4:
 				System.out.println("Displaying all Address Books");
 				showBookFiles();
@@ -109,11 +103,9 @@ public class AddressBookMain extends AddressBookInterface {
 				String AddBookName = scanner.nextLine();
 				getBookTxtFile(AddBookName);
 				break;
-
 			case 0:
 				outerFlag = 1;
 				break;
-
 			default:
 				System.out.println("Invalid choice.");
 			}
